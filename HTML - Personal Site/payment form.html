@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <style>
+      .yes {
+        text-align: center;
+        color: rgb(60, 105, 56);
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="yes">PAYMENT FORM</div>
+    <p>Required fields are followed by "*"</p>
+    <h2>Contact Information</h2>
+    <form action="mailto:movieshaukeenz@gmail.com" method="post" enctype="text/plain">
+      <b
+        ><p>Name: *<input type="text" required /></p
+      ></b>
+      <fieldset>
+        <legend>Gender*</legend>
+        <b>
+          <p>
+            Male<input type="radio" name="gender" required /> Female<input
+              type="radio"
+              name="gender"
+              required
+            />
+          </p>
+        </b>
+      </fieldset>
+      <p>
+        <b>
+          Address :
+          <textarea name="Address" id="Address" cols="45" rows="8"></textarea>
+        </b>
+      </p>
+      <p>
+        <strong>
+          Email Address : *<input
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </strong>
+      </p>
+      <p>
+        Pincode : *<input type="number" name="pincode" id="pincode" required />
+      </p>
+      <hr />
+      <h2>Payment Information</h2>
+      <p>
+        Card Type : *<select name="card_type" id="card_type" required>
+          <option value="">--select your card type</option>
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="rupay">RuPay</option>
+        </select>
+      </p>
+      <p>Card number : *<input type="number" required /></p>
+      <p>Card Expiration : *<input type="date" required /></p>
+      <p>CVV : *<input type="password" required /></p>
+      <input type="submit" value="Pay Now" size="100" />
+      <hr />
+      
+    </form>
+  </body>
+</html>
